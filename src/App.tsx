@@ -119,11 +119,11 @@ function App() {
                   <h4 className="text-2xl font-bold">Android Setup</h4>
                 </div>
                 <div className="flex gap-2">
-                  <a href="#" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <MonitorPlay className="w-3.5 h-3.5" /> Video Guide
-                  </a>
-                  <Link to="/android-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <ImageIcon className="w-3.5 h-3.5" /> Picture Guide
+                  <Link to="/android-video-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <MonitorPlay className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Video Guide
+                  </Link>
+                  <Link to="/android-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <ImageIcon className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Picture Guide
                   </Link>
                 </div>
               </div>
@@ -156,10 +156,10 @@ function App() {
                   </div>
                   <div className="ml-8 space-y-2">
                     <div className="bg-emerald-50/50 border border-emerald-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      <Smartphone className="w-4 h-4 text-emerald-600" /> Launch the <strong className="text-slate-800">eduroam CAT</strong> app
+                      <Smartphone className="w-4 h-4 text-emerald-600" /> Launch the eduroam CAT app
                     </div>
                     <div className="bg-emerald-50/50 border border-emerald-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      <Search className="w-4 h-4 text-emerald-600" /> Search for <strong className="text-slate-800">University of Mines and Technology</strong>
+                      <Search className="w-4 h-4 text-emerald-600" /> Search for University of Mines and Technology
                     </div>
                     <div className="bg-emerald-50/50 border border-emerald-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
                       <ChevronRight className="w-4 h-4 text-emerald-600" /> Tap the university name and accept the Agreement
@@ -207,12 +207,12 @@ function App() {
                   <h4 className="text-2xl font-bold">iOS Setup</h4>
                 </div>
                 <div className="flex gap-2">
-                  <a href="#" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <MonitorPlay className="w-3.5 h-3.5" /> Video Guide
-                  </a>
-                  <a href="#" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <ImageIcon className="w-3.5 h-3.5" /> Picture Guide
-                  </a>
+                  <Link to="/ios-video-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <MonitorPlay className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Video Guide
+                  </Link>
+                  <Link to="/ios-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <ImageIcon className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Picture Guide
+                  </Link>
                 </div>
               </div>
 
@@ -225,11 +225,10 @@ function App() {
                   </div>
                   <div className="ml-8 space-y-2">
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      Open <strong className="text-slate-800">Safari</strong> or any browser
+                      <Search className="w-4 h-4 text-slate-600" /> Open <strong className="text-slate-800">Safari</strong> or any browser
                     </div>
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex flex-col gap-1 text-slate-600 overflow-hidden">
-                      <span className="flex items-center gap-2"><ExternalLink className="w-4 h-4 text-slate-500" /> Go to:</span>
-                      <strong className="text-slate-800 break-all ml-6">https://cat.eduroam.org</strong>
+                      <span className="flex items-center gap-2"><ExternalLink className="w-4 h-4 text-slate-500" /> Go to: https://cat.eduroam.org</span>
                     </div>
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
                       <ChevronRight className="w-4 h-4 text-slate-500" /> Tap "Click here to download your EDUROAM installer"
@@ -245,7 +244,7 @@ function App() {
                   </div>
                   <div className="ml-8 space-y-2">
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      Search for <strong className="text-slate-800">University of Mines and Technology</strong>. Tap once it appears
+                      <Search className="w-6 h-6 text-slate-600" /> Search for University of Mines and Technology. Tap once it appears
                     </div>
                   </div>
                 </div>
@@ -264,7 +263,7 @@ function App() {
                       <CheckCircle2 className="w-4 h-4 text-slate-500" /> Wait for "Profile Downloaded" message
                     </div>
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      <Settings className="w-4 h-4 text-slate-500" /> Go to <strong className="text-slate-800">Settings → General → VPN & Device Management</strong>
+                      <Settings className="w-4 h-4 text-slate-500" /> Go to Settings → General → VPN & Device Management
                     </div>
                     <div className="bg-slate-100/80 border border-slate-200 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
                       Tap the downloaded eduroam profile
@@ -322,15 +321,15 @@ function App() {
               <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 text-white">
                 <div className="flex items-center gap-3 mb-4">
                   <Monitor className="w-8 h-8" />
-                  <h4 className="text-2xl font-bold">Windows Setup</h4>
+                  <h4 className="text-2xl font-bold">Desktop Setup</h4>
                 </div>
                 <div className="flex gap-2">
-                  <a href="#" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <MonitorPlay className="w-3.5 h-3.5" /> Video Guide
-                  </a>
-                  <a href="#" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm">
-                    <ImageIcon className="w-3.5 h-3.5" /> Picture Guide
-                  </a>
+                  <Link to="/windows-video-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <MonitorPlay className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Video Guide
+                  </Link>
+                  <Link to="/windows-guide" className="flex items-center gap-1 bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-full text-xs font-medium transition-colors backdrop-blur-sm group">
+                    <ImageIcon className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" /> Picture Guide
+                  </Link>
                 </div>
               </div>
 
@@ -343,16 +342,13 @@ function App() {
                   </div>
                   <div className="ml-8 space-y-2">
                     <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      Open any browser and visit:
-                    </div>
-                    <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex flex-col gap-1 text-slate-600 overflow-hidden">
-                      <strong className="text-slate-800 break-all">https://cat.eduroam.org</strong>
+                      <Search className="w-5 h-5 text-blue-600" /> Open any browser and visit: https://cat.eduroam.org
                     </div>
                     <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
                       <ChevronRight className="w-4 h-4 text-blue-500" /> Click "Download your eduroam installer"
                     </div>
                     <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      <Search className="w-4 h-4 text-blue-500" /> Search for <strong className="text-slate-800">University of Mines and Technology</strong>
+                      <Search className="w-4 h-4 text-blue-500" /> Search for University of Mines and Technology
                     </div>
                   </div>
                 </div>
@@ -365,7 +361,7 @@ function App() {
                   </div>
                   <div className="ml-8 space-y-2">
                     <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
-                      Locate <strong className="text-slate-800">eduroam-W10-UMaT-EDUROAM.exe</strong> in Downloads
+                      <ChevronRight className="w-4 h-4 text-blue-500" />Locate eduroam-W10-EDUROAM.exe in Downloads
                     </div>
                     <div className="bg-blue-50/50 border border-blue-100 rounded-lg p-3 text-sm flex items-center gap-2 text-slate-600">
                       <ShieldCheck className="w-4 h-4 text-blue-500" /> Right-click → <strong className="text-slate-800">Run as administrator</strong>
