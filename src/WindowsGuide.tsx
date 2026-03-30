@@ -34,7 +34,7 @@ function WindowsGuide() {
             <Monitor className="w-10 h-10" />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-slate-800 mb-2">Connecting your Windows Device</h2>
+            <h2 className="text-2xl font-bold text-slate-800 mb-2">Connecting your Desktop</h2>
             <p className="text-slate-600">
               Follow these images carefully to securely configure your Windows laptop or PC for the UMaT eduroam network. Ensure you have your <strong>username@umat.edu.gh</strong> credentials ready.
             </p>
