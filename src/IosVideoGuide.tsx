@@ -27,7 +27,7 @@ function IosVideoGuide() {
 
       {/* Main Content Layout */}
       <main className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl">
-        
+
         {/* Intro */}
         <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 mb-8 text-center md:text-left flex flex-col md:flex-row items-center gap-6">
           <div className="bg-slate-100 text-slate-700 p-4 rounded-full flex-shrink-0 animate-pulse">
@@ -42,7 +42,7 @@ function IosVideoGuide() {
         </div>
 
         {/* Video Container */}
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 aspect-video relative group">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 aspect-auto relative group">
           <video
             className="w-full h-full object-cover bg-slate-900"
             controls

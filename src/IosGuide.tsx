@@ -122,7 +122,7 @@ function IosGuide() {
               <div className="absolute left-0 md:left-auto md:-right-[20px] top-6 w-10 h-10 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold shadow-md border-4 border-slate-50 z-10">4</div>
               <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 md:ml-auto">
                 <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2 md:justify-end">
-                  <Settings className="w-5 h-5 text-slate-600" /> Install the Profile
+                  <Settings className="w-5 h-5 text-slate-600" /> Navigate to Profile Setting
                 </h3>
                 <p className="text-slate-600 mb-3 md:text-left">
                   Open your iPhone's <strong>Settings</strong> app. Navigate to <strong>General → VPN & Device Management</strong>. Select the downloaded eduroam profile and tap <strong>Install</strong> in the top right corner.
@@ -135,7 +135,7 @@ function IosGuide() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2 flex md:justify-end">
               <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-2 max-w-sm w-full transform transition hover:scale-[1.02]">
-                <img src="/ios-step5.jpg" alt="Enter Credentials and Connect" className="rounded-xl w-full object-cover" />
+                <img src="/ios-step5.jpg" alt="Download Profile" className="rounded-xl w-full object-cover" />
               </div>
             </div>
 
@@ -143,15 +143,57 @@ function IosGuide() {
               <div className="absolute left-0 md:-left-[20px] top-6 w-10 h-10 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold shadow-md border-4 border-slate-50 z-10">5</div>
               <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
                 <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
+                  <Download className="w-5 h-5 text-slate-600" /> Install Profile
+                </h3>
+                <p className="text-slate-600 mb-4">
+                  Select the downloaded eduroam profile and tap <strong>Install</strong> in the top right corner.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 6 */}
+          <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
+            <div className="md:w-1/2 flex md:justify-start">
+              <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-2 max-w-sm w-full transform transition hover:scale-[1.02]">
+                <img src="/ios-step6.jpg" alt="Install Profile in Settings" className="rounded-xl w-full object-cover" />
+              </div>
+            </div>
+
+            <div className="md:w-1/2 relative pl-12 md:pr-8 md:pl-0 text-left md:text-right">
+              <div className="absolute left-0 md:left-auto md:-right-[20px] top-6 w-10 h-10 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold shadow-md border-4 border-slate-50 z-10">6</div>
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 md:ml-auto">
+                <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2 md:justify-end">
+                  <Settings className="w-5 h-5 text-slate-600" /> Enter Credentials
+                </h3>
+                <p className="text-slate-600 mb-3 md:text-left">
+                  During installation, you will be prompted to enter your username (<strong>username@umat.edu.gh</strong>) and password. Make sure to enter them correctly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 7 */}
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="md:w-1/2 flex md:justify-end">
+              <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-2 max-w-sm w-full transform transition hover:scale-[1.02]">
+                <img src="/ios-step7.jpg" alt="Enter Credentials and Connect" className="rounded-xl w-full object-cover" />
+              </div>
+            </div>
+
+            <div className="md:w-1/2 relative pl-12 md:pl-8">
+              <div className="absolute left-0 md:-left-[20px] top-6 w-10 h-10 rounded-full bg-slate-700 text-white flex items-center justify-center font-bold shadow-md border-4 border-slate-50 z-10">7</div>
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                <h3 className="text-xl font-bold text-slate-800 mb-3 flex items-center gap-2">
                   <User className="w-5 h-5 text-slate-600" /> Enter Credentials & Connect
                 </h3>
                 <p className="text-slate-600 mb-4">
-                  During installation, you will be prompted to enter your username (<strong>username@umat.edu.gh</strong>) and password. Make sure to enter them correctly.
+                  Once installed, your device will automatically connect to eduroam whenever you are on campus. You can verify this in <strong>Settings → Wi-Fi</strong>.
                 </p>
-                <div className="bg-white rounded-xl p-3 text-sm flex items-start gap-2 text-slate-500 border border-slate-200">
+                {/*<div className="bg-white rounded-xl p-3 text-sm flex items-start gap-2 text-slate-500 border border-slate-200">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0" />
                   Once installed, your device will automatically connect to eduroam whenever you are on campus. You can verify this in <strong>Settings → Wi-Fi</strong>.
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
